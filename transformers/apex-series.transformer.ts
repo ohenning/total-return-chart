@@ -24,8 +24,8 @@ export function transformApexSeries(
   }
 
   // Prepare stock price and dividends data in order to calculate total return
-  const fullData: any[] = priceData
-    .concat(dividendsData as unknown as any)
+  const fullData: (Price & Dividends)[] = []
+    .concat(dividendsData, priceData)
     .sort((a, b) => Date.parse(a.Date) - Date.parse(b.Date));
 
   // Define dynamic data
