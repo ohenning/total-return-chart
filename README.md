@@ -35,7 +35,6 @@ To view the charts, navigate to one of the following routes:
 
 ## Stuff to improve
 
-- Landing page at root route
 - Dynamic Sub-Pages
 - Understand nuxt JS public import logic and do it properly
 - Responsive
