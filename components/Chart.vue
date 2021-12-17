@@ -10,9 +10,8 @@ export default {
         },
         yaxis: {
           labels: {
-            formatter: (value) => `${(value - 1) * 100}%`,
+            formatter: (value) => `${((value - 1) * 100).toFixed(0)}%`,
           },
-          forceNiceScale: true,
         },
         stroke: {
           curve: "smooth",

@@ -35,7 +35,6 @@ To view the charts, navigate to one of the following routes:
 - Proper typings
 - Separate business from view logic
 - Understand nuxt JS public import logic and do it properly
-- Fixing the exxon charts weird looking y axis scale
 
 ## Maintainer
 
