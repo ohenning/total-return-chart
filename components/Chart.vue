@@ -25,7 +25,7 @@ export default {
 
 <template>
   <apexchart
-    width="1200"
+    width="1000"
     type="line"
     :options="getOptions()"
     :series="data"
