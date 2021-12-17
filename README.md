@@ -39,6 +39,7 @@ To view the charts, navigate to one of the following routes:
 - Dynamic Sub-Pages
 - Proper typings
 - Understand nuxt JS public import logic and do it properly
+- Responsive
 
 ## Maintainer
 
