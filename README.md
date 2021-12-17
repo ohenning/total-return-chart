@@ -28,6 +28,15 @@ To view the charts, navigate to one of the following routes:
 1. npm install
 2. npm run dev
 
+## Stuff to improve
+
+- Landing page at root route
+- Dynamic Sub-Pages
+- Proper typings
+- Separate business from view logic
+- Understand nuxt JS public import logic and do it properly
+- Fixing the exxon charts weird looking y axis scale
+
 ## Maintainer
 
 [@ohenning](https://github.com/ohenning)
