@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "nuxt3": "latest"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.15.1",
+    "apexcharts": "^3.32.0",
+    "vue3-apexcharts": "^1.4.1"
+  }
+}
