@@ -15,7 +15,7 @@ export default {
           forceNiceScale: true,
         },
         stroke: {
-          curve: "straight",
+          curve: "smooth",
           width: 2,
         },
       };
