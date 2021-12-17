@@ -1,6 +1,15 @@
-<script setup>
+<script setup lang="ts">
 import ChartData from "../public/APPLPrice.json";
 import DividendData from "../public/APPLDividend.json";
+import { transformApexSeries } from "../transformers/apex-series.transformer";
+import { Price } from "~~/types/price";
+import { Dividends } from "~~/types/dividends";
+const StockName = "Apple";
+const series = transformApexSeries(
+  ChartData as unknown as Price[],
+  DividendData as unknown as Dividends[],
+  StockName
+);
 </script>
 
 <template>
@@ -9,14 +18,11 @@ import DividendData from "../public/APPLDividend.json";
       <div class="centered">
         <h2>Apple Total Return Chart</h2>
       </div>
-
-      <ClientOnly>
-        <Chart
-          :priceData="ChartData"
-          :dividendsData="DividendData"
-          stockName="Apple"
-        />
-      </ClientOnly>
+      <div v-if="series">
+        <ClientOnly>
+          <Chart :data="series" />
+        </ClientOnly>
+      </div>
     </div>
   </div>
 </template>

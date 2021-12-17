@@ -33,7 +33,6 @@ To view the charts, navigate to one of the following routes:
 - Landing page at root route
 - Dynamic Sub-Pages
 - Proper typings
-- Separate business from view logic
 - Understand nuxt JS public import logic and do it properly
 
 ## Maintainer
