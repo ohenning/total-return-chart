@@ -28,6 +28,11 @@ To view the charts, navigate to one of the following routes:
 1. npm install
 2. npm run dev
 
+### Run the app using docker
+
+1. docker build .
+2. docker run -p 3000:3000 {image_sha}
+
 ## Stuff to improve
 
 - Landing page at root route
