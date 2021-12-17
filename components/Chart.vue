@@ -60,12 +60,6 @@ export default {
         },
       ];
     },
-    calcTotalStockReturn(start: number, end: number, dividends = 0): number {
-      return 1 + (end - start + dividends) / start;
-    },
-    calcIntraDayAVG(start: number, end: number): number {
-      return (start + end) / 2;
-    },
   },
 };
 </script>
