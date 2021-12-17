@@ -1,6 +1,6 @@
 <script setup>
-import ChartDate from "../public/MSFTPrice.json";
-import DividendDate from "../public/MSFTDividend.json";
+import ChartData from "../public/MSFTPrice.json";
+import DividendData from "../public/MSFTDividend.json";
 </script>
 
 <template>
@@ -11,8 +11,8 @@ import DividendDate from "../public/MSFTDividend.json";
       </div>
       <ClientOnly>
         <Chart
-          :priceData="ChartDate"
-          :dividendsData="DividendDate"
+          :priceData="ChartData"
+          :dividendsData="DividendData"
           stockName="Microsoft"
         />
       </ClientOnly>

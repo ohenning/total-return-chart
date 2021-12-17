@@ -1,6 +1,6 @@
 <script setup>
-import ChartDate from "../public/APPLPrice.json";
-import DividendDate from "../public/APPLDividend.json";
+import ChartData from "../public/APPLPrice.json";
+import DividendData from "../public/APPLDividend.json";
 </script>
 
 <template>
@@ -12,8 +12,8 @@ import DividendDate from "../public/APPLDividend.json";
 
       <ClientOnly>
         <Chart
-          :priceData="ChartDate"
-          :dividendsData="DividendDate"
+          :priceData="ChartData"
+          :dividendsData="DividendData"
           stockName="Apple"
         />
       </ClientOnly>

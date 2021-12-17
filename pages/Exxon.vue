@@ -1,6 +1,6 @@
 <script setup>
-import ChartDate from "../public/XOMPrice.json";
-import DividendDate from "../public/XOMDividend.json";
+import ChartData from "../public/XOMPrice.json";
+import DividendData from "../public/XOMDividend.json";
 </script>
 
 <template>
@@ -12,8 +12,8 @@ import DividendDate from "../public/XOMDividend.json";
 
       <ClientOnly>
         <Chart
-          :priceData="ChartDate"
-          :dividendsData="DividendDate"
+          :priceData="ChartData"
+          :dividendsData="DividendData"
           stockName="Exxon"
         />
       </ClientOnly>
